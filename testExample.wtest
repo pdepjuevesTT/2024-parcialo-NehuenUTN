@@ -1,9 +1,10 @@
-import example.pepita
+import parcial.*
 
-describe "group of tests for pepita" {
+describe "tests" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "puede comprar" {
+    const lionel = new Credito(cuentaBancaria=100,limiteCompra=1000,cantidadCuotas=6,interes=20) 
+    assert.that(lionel.pagar(100))
   }
 
 }
